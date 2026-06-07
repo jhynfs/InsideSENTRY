@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import logo from '../../imports/Asset_Tracking_Logo_V2.png';
 
 export function Login() {
@@ -23,7 +22,7 @@ export function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="w-full max-w-md p-8 bg-slate-800 rounded-lg shadow-2xl border border-slate-700">
         <div className="flex items-center justify-center mb-8">
-          <ImageWithFallback src={logo} alt="2SBn SENTRY Logo" className="h-12 mr-3" />
+          <img src={logo} alt="2SBn SENTRY Logo" className="w-32 h-32 mx-auto mb-6 object-contain" />
           <div>
             <h1 className="text-2xl text-white">2SBn SENTRY</h1>
             <p className="text-sm text-slate-400">Secure Access Portal</p>
